@@ -48,8 +48,8 @@
 								<p>COVID-19 Patients/Doctors</p>
 								<h2>Registration Form</h2>
 							</header>
-							
-							<form method="post" action="#">
+
+							<form id="registration">
 								<div class="row uniform">
 									<div class="6u 12u$(xsmall)">
 										<input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -68,35 +68,8 @@
 										</div>
 									</div>
 									<div class="6u 12u$(xsmall)">
-										<input type="text" name="preferredDoctor" id="preferredDoctor" value="" placeholder="Preferred Doctor Name" style="display: none;"/>
+										<input type="text" name="preferredDoctor" id="preferredDoctor" value="" placeholder="Preferred Doctor Public Address" style="display: none;"/>
 									</div>
-									<!-- Break -->
-									<!-- <div class="4u 12u$(small)">
-										<input type="radio" id="priority-low" name="priority" checked>
-										<label for="priority-low">Low Priority</label>
-									</div>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="priority-normal" name="priority">
-										<label for="priority-normal">Normal Priority</label>
-									</div>
-									<div class="4u$ 12u$(small)">
-										<input type="radio" id="priority-high" name="priority">
-										<label for="priority-high">High Priority</label>
-									</div> -->
-									<!-- Break -->
-									<!-- <div class="6u 12u$(small)">
-										<input type="checkbox" id="copy" name="copy">
-										<label for="copy">Email me a copy of this message</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="human" name="human" checked>
-										<label for="human">I am a human and not a robot</label>
-									</div> -->
-									<!-- Break -->
-									<!-- <div class="12u$">
-										<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-									</div> -->
-									<!-- Break -->
 									<div class="12u$">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" /></li>
@@ -108,7 +81,7 @@
 						</div>
 					</div>
 				</div>
-			</section>		
+			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -131,6 +104,10 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/web3.min.js"></script>
+  		<script src="assets/js/abi.js"></script>
+  		<script src="assets/js/contract.js"></script>
+			<script src="assets/js/dashboard.js"></script>
+  		<script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
 	</body>
 </html>

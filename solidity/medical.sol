@@ -5,6 +5,7 @@ contract medical {
     {
         bytes32 name;
         bool isSick;
+        bool initialized;
         bool feelsSick;
         bool isDoctor;
         bool verified;
@@ -42,9 +43,14 @@ contract medical {
        UserStore[_Doctor].isDoctor = true;
     }
 
-     function registerUser(bytes32 _name, bool _isUser, address _trustedDoctor) public
+     function registerUser(bytes32 _name, bool _isDoctor, address _trustedDoctor) public
     {
-       UserStore[msg.sender] = users(_name, false, false, _isUser, false, _trustedDoctor);
+       UserStore[msg.sender] = users(_name, false, true, false, _isDoctor, false, _trustedDoctor);
+    }
+
+   function isInitialized() public view returns (bool initialized)
+    {
+        return UserStore[msg.sender].initialized;
     }
 
     function setFeelsSick(bool _feelsSick) public
